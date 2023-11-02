@@ -25,4 +25,7 @@ public class PhotoViewModel extends AndroidViewModel {
     public LiveData<List<PhotoEntity>> getAllPhotos() {
         return allPhotos;
     }
+    public void refreshPhotos() {
+        photoRepository.refreshPhotos();
+    }
 }
